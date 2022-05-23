@@ -1,0 +1,56 @@
+.navbar{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    // @include responsive(m){
+
+    // }
+    
+    &_logo{
+        img{
+            width: 40px;
+        }
+    }
+    
+    &_menu{
+        display: none;
+    }
+
+    &_toggle{
+        width: 40px;
+        cursor: pointer;
+        @include responsive(m){
+            display: none;
+        }
+
+        span{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            height: 3px;
+            border-radius: 20px;
+            display: block;
+        }
+
+        .stuffing{
+            margin: 10px 0;
+        }
+
+        .top-bun.active{
+            transform: rotate(-45deg) translate(-9.5px);
+            width: 50%;
+        }
+
+        .stuffing.active{
+            width: 80%;
+            transform: translateX(-3px);
+        }
+
+        .bottom-bun.active{
+            transform: rotate(45deg) translateX(-9.5px);
+            width: 50%;
+        }
+    }
+
+}
