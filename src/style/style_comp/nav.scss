@@ -21,8 +21,20 @@
     &_toggle{
         width: 40px;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        position: relative;
         @include responsive(m){
             display: none;
+        }
+
+        input{
+        z-index: 10;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+        cursor: pointer;
         }
 
         span{
