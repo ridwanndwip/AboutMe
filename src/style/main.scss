@@ -3,15 +3,17 @@
 
 // Component
 @import'style_comp/nav';
+@import'style_comp/hero';
 
 
 body{
 	overflow-x: hidden;
+    background-color: $color2
 }
 
 * {
     margin: 0;
     padding: 0;
-    // font-family: 'Lalezar', cursive;
+    font-family: 'Lalezar', cursive;
     font-family: 'Ubuntu', sans-serif;
 }
