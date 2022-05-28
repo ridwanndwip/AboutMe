@@ -1,0 +1,14 @@
+// color function
+
+$color1:#13151a;
+$color2:#0f1014; 
+$color3:#ffffff;
+// navbar
+$color4:#0f1014f7;
+
+// mixin
+
+@mixin text($size,$weight){
+    font-size: $size;
+    font-weight: $weight;
+}

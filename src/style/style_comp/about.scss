@@ -1,0 +1,23 @@
+.about{
+    // background-color: aqua;
+    margin-top: 12em;
+    padding-bottom: 10em;
+
+    &_caption{
+        display: flex;
+        justify-content: flex-end;
+        &::after{
+            z-index: -1;
+            content: '';
+            position: absolute;
+            margin-top: 10px;
+            margin-right: 55px;            
+            width: 70px;
+            border-bottom: 1px solid $color3;
+            @include responsive(m){
+            margin-right: 125px;
+            }
+        }
+    }
+
+}
