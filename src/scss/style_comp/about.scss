@@ -1,22 +1,17 @@
 .about{
-    // background-color: aqua;
     margin-top: 12em;
     padding-bottom: 10em;
 
     &_caption{
         display: flex;
-        justify-content: flex-end;
-        &::after{
-            z-index: -1;
+        flex-direction: row;
+        width: 100%;
+        @include text(60px,500);
+        &::before{
             content: '';
-            position: absolute;
-            margin-top: 10px;
-            margin-right: 55px;            
-            width: 70px;
-            border-bottom: 1px solid $color3;
-            @include responsive(m){
-            margin-right: 125px;
-            }
+            border-bottom: 1px solid white;
+            margin: auto 20px auto 0px;
+            width: 100%;
         }
     }
 

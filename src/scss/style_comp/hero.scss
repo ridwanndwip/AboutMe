@@ -2,35 +2,29 @@
     // margin: 0 1.8em;
     height: 65vh;
     background-color:$color1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center,center,default);
     @include responsive(m){
     margin: 80px 0;
     }
 
     span{
-        position: absolute;
-        color: $color3;
-        font-size: 96px;
-        font-weight: bold;
+    position: absolute;
+    color: $color3;
+    font-size: 96px;
+    font-weight: bold;
     }
 }
 
 .scroll{
     @include text(15px,400);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center,center,default);
     padding-top: 5em;
     @include responsive(m){
         @include text(20px,400)
     }
     
     span{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex(center,center,default);
         &::after{
             z-index: -1;
             transform: rotate(90deg);

@@ -12,3 +12,10 @@ $color4:#0f1014f7;
     font-size: $size;
     font-weight: $weight;
 }
+
+@mixin flex($align,$justify, $direction){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
